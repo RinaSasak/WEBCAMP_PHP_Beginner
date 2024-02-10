@@ -1,7 +1,7 @@
 <?php
 
-$i = random_int(0, 15);
-$j = random_int(0, 15);
+$i = random_int(0, 255);
+$j = random_int(0, 255);
 
 //AND（論理積）：どちらの入力も1のときのみ1、それ以外は0
 $k = $i & $j;
