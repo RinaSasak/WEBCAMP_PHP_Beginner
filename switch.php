@@ -29,3 +29,13 @@ switch($i) {
         echo "i は 2(int)です \n";
         break;
 }
+
+// PHP 8以降で使えるようになった構文「match式」
+$i = 2;
+$s = match($i) {
+    '2a' => "i は '2a'です \n",
+    '2' => "i は '2'(string)です \n",
+    2 => "i は 2(int)です \n",
+};
+//
+echo $s;
